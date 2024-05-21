@@ -17,7 +17,7 @@ public class RepairListController {
     @Autowired
     RepairListService repairListService;
 
-    @GetMapping("/")
+    @GetMapping
     public ResponseEntity<List<RepairList>> listRepairList() {
         List<RepairList> repairs = repairListService.getRepairsList();
         return ResponseEntity.ok(repairs);
