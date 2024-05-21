@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 //ESTE ES EL MICROSERVICIO 2
 
 @Entity
-@Table(name = "RepairList")
+@Table(name = "repairList")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
