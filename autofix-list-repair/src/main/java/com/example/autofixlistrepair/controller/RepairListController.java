@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.regex.Pattern;
 
 @RestController
-@RequestMapping("/repair-list")
+@RequestMapping("/api/repair-list")
 @CrossOrigin("*")
 public class RepairListController {
     @Autowired
