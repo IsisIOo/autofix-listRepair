@@ -23,35 +23,4 @@ public class RepairListController {
         return ResponseEntity.ok(repairs);
     }
 
-    @GetMapping("/{id}")
-    public ResponseEntity<RepairList> getRepairListById(@PathVariable Long id) {
-        RepairList repair = repairListService.getRepairListById(id);
-        return ResponseEntity.ok(repair);
-    }
-
-    @GetMapping("/by-repair/{repairName}")
-    public ResponseEntity<RepairList> getRepairListByName(@PathVariable String repairName) {
-        RepairList repair = repairListService.getRepairListByName(repairName);
-        return ResponseEntity.ok(repair);
-    }
-
-    @DeleteMapping("/{id}")
-    public ResponseEntity<RepairList> deleteRepairList(@PathVariable Long id) throws Exception {
-        var isDeleted = repairListService.deleteRepairList(id);
-        return ResponseEntity.noContent().build();
-    }
-
-    @PutMapping("/")
-    public ResponseEntity<RepairList> updateRepairList(@PathVariable Long id, @RequestBody RepairList repair) {
-        RepairList repairUpdated = repairListService.saveRepairList(repair);
-        return ResponseEntity.ok(repairUpdated);
-    }
-
-    @PostMapping("/")
-    public ResponseEntity<RepairList> saveRepairList(@RequestBody RepairList repair) {
-        RepairList repairNew = repairListService.saveAndSendRepairList(repair);
-        return ResponseEntity.ok(repairNew);
-    }
-
-
 }
