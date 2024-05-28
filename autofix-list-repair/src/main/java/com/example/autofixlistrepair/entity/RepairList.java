@@ -20,10 +20,10 @@ public class RepairList {
 
     private Long id;
 
-    private String repairType;
-    private double gasolina;
-    private double diesel;
-    private double hibrido;
-    private double electrico;
+    private String repairName;
+    private double gasolineAmount;
+    private double dieselAmount;
+    private double hibridAmount;
+    private double electricAmount;
 
 }
