@@ -12,7 +12,7 @@ import java.util.regex.Pattern;
 
 @RestController
 @RequestMapping("/api/repair-list")
-@CrossOrigin("*")
+
 public class RepairListController {
     @Autowired
     RepairListService repairListService;
